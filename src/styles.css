@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@700&family=Montserrat&family=Varela+Round&display=swap");
+
+.App {
+  font-family: sans-serif;
+}
+
+h1 {
+  font-family: "Varela Round", sans-serif;
+}
+
+input {
+  margin-top: 5px;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 9rem;
+  height: 1.8rem;
+  padding: 5px;
+  text-align: center;
+  font-size: medium;
+}
+
+#meaning {
+  padding: 15px;
+  font-family: "Kalam", cursive;
+  font-size: x-large;
+}
+
+#emoji-head {
+  padding-top: 5px;
+  font-family: "Varela Round", sans-serif;
+  font-size: larger;
+}
+
+.text-container {
+  text-align: center;
+}
