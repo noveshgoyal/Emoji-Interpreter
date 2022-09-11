@@ -39,7 +39,6 @@ var emojiDictionary = {
   "🥻": "Sari",
   "💡": "Light Bulb",
   "🪔": "Diya Lamp",
-  "️🕉": "Om",
   "👋": "Waving Hand",
   "🤚": "Raised Back of Hand",
   "🖐️": "Hand with Fingers Splayed",
@@ -78,7 +77,8 @@ var emojiDictionary = {
   "🗻": "Mount Fuji",
   "🏟️": "Stadium",
   "🏤": "Post Office",
-  "🚏": "Bus Stop"
+  "🚏": "Bus Stop",
+  "️🕉": "Om"
 };
 
 const emojisWeKnow = Object.keys(emojiDictionary);
@@ -107,13 +107,13 @@ export default function App() {
         <div id="meaning"> {meaning} </div>
         <div id="emoji-head">Emojis we have:</div>
       </div>
-      <div style={{ padding: "20px 20%" }}>
+      <div className="emoji-container">
         {emojisWeKnow.map((emoji) => {
           return (
             <span
+              className = "emoji"
               key={emoji}
               onClick={() => emojiClickHandler(emoji)}
-              style={{ fontSize: "2.2rem", cursor: "pointer", padding: "10px" }}
             >
               {emoji}
             </span>
